@@ -1,0 +1,28 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --project=chromium --project=firefox --project=webkit",
+    "test:mobile": "cross-env RUN_APPIUM=true playwright test --project=mobile",
+    "test:all": "cross-env RUN_APPIUM=true playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.0",
+    "@types/node": "^26.1.2",
+    "appium": "^3.6.0",
+    "appium-uiautomator2-driver": "^8.2.2",
+    "cross-env": "^10.1.0",
+    "expect-webdriverio": "^5.7.0",
+    "genson-js": "^0.0.8",
+    "webdriverio": "^9.30.0"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0"
+  }
+}
